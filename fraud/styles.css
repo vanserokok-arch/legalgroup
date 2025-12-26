@@ -100,10 +100,10 @@ body.page-investment .investment-faq .faq-aside--visual , body.page-influence .i
 }
 
 /* Если внутри aside есть реальный <img>, не даём ему «сжимать» визуал */
-body.page-investment .investment-faq .faq-aside--visual img,
-, body.page-influence .investment-faq .faq-aside--visual img,
-, body.page-credit .investment-faq .faq-aside--visual img,
-, body.page-main .investment-faq .faq-aside--visual img,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-faq .faq-aside--visual img,
+body.page-influence .investment-faq .faq-aside--visual img,
+body.page-credit .investment-faq .faq-aside--visual img,
+body.page-main .investment-faq .faq-aside--visual img,
 body.page-investment .investment-faq .faq-aside--visual .faq-visual-image , body.page-influence .investment-faq .faq-aside--visual .faq-visual-image , body.page-credit .investment-faq .faq-aside--visual .faq-visual-image , body.page-main .investment-faq .faq-aside--visual .faq-visual-image {
   width: 100%;
   height: 100%;
@@ -132,7 +132,7 @@ body.page-investment .investment-faq::before, body.page-influence .investment-fa
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/fraud/landing/assets/block/great_K.png');
+  background-image: url('/fraud/assets/block/great_K.png');
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: contain; /* показываем картинку целиком — без обрезания */
@@ -309,10 +309,10 @@ body.page-investment .investment-faq .faq-ask-panel::after, body.page-influence 
 }
 
 /* тонкий «блик-сканер» (наведением оживает) */
-body.page-investment .investment-faq .faq-ask-panel .faq-ask-copy,
-, body.page-influence .investment-faq .faq-ask-panel .faq-ask-copy,
-, body.page-credit .investment-faq .faq-ask-panel .faq-ask-copy,
-, body.page-main .investment-faq .faq-ask-panel .faq-ask-copy,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-faq .faq-ask-panel .faq-ask-copy,
+body.page-influence .investment-faq .faq-ask-panel .faq-ask-copy,
+body.page-credit .investment-faq .faq-ask-panel .faq-ask-copy,
+body.page-main .investment-faq .faq-ask-panel .faq-ask-copy,
 body.page-investment .investment-faq .faq-ask-panel .faq-ask-btn, body.page-influence .investment-faq .faq-ask-panel .faq-ask-btn, body.page-credit .investment-faq .faq-ask-panel .faq-ask-btn, body.page-main .investment-faq .faq-ask-panel .faq-ask-btn{
   position: relative;
   z-index: 1;
@@ -485,14 +485,14 @@ body.page-investment .investment-faq .faq-ask-btn:active, body.page-influence .i
    - Challenges CTA: .challenges-cta__btn ("Получить консультацию")
    ========================= */
 
-body.page-investment .keis-header-cta,
-, body.page-influence .keis-header-cta,
-, body.page-credit .keis-header-cta,
-, body.page-main .keis-header-cta,
-body.page-investment .hero-investment .btn-primary,
-, body.page-influence .hero-investment .btn-primary,
-, body.page-credit .hero-investment .btn-primary,
-, body.page-main .hero-investment .btn-primary,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta,
+body.page-influence .keis-header-cta,
+body.page-credit .keis-header-cta,
+body.page-main .keis-header-cta,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary,
+body.page-influence .hero-investment .btn-primary,
+body.page-credit .hero-investment .btn-primary,
+body.page-main .hero-investment .btn-primary,
 body.page-investment .investment-challenges .challenges-cta__btn, body.page-influence .investment-challenges .challenges-cta__btn, body.page-credit .investment-challenges .challenges-cta__btn, body.page-main .investment-challenges .challenges-cta__btn{
   position: relative;
   display: inline-flex;
@@ -568,10 +568,10 @@ body.page-investment .hero-investment .btn-primary, body.page-influence .hero-in
 }
 
 /* === CHALLENGES CTA BUTTON — ultra glass + gold, FAQ style === */
-/* Replaced block for body.page-investment .investment-challenges .challenges-cta__btn */
-, body.page-influence .investment-challenges .challenges-cta__btn */
-, body.page-credit .investment-challenges .challenges-cta__btn */
-, body.page-main .investment-challenges .challenges-cta__btn */
+/* Replaced block for :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-challenges .challenges-cta__btn */
+body.page-influence .investment-challenges .challenges-cta__btn */
+body.page-credit .investment-challenges .challenges-cta__btn */
+body.page-main .investment-challenges .challenges-cta__btn */
 body.page-investment .investment-challenges .challenges-cta__btn, body.page-influence .investment-challenges .challenges-cta__btn, body.page-credit .investment-challenges .challenges-cta__btn, body.page-main .investment-challenges .challenges-cta__btn{
   margin-top: 12px;
   width: 100%;
@@ -669,14 +669,14 @@ body.page-investment .investment-challenges .challenges-cta__btn::after, body.pa
 }
 
 /* premium rim + prism edge */
-body.page-investment .keis-header-cta::before,
-, body.page-influence .keis-header-cta::before,
-, body.page-credit .keis-header-cta::before,
-, body.page-main .keis-header-cta::before,
-body.page-investment .hero-investment .btn-primary::before,
-, body.page-influence .hero-investment .btn-primary::before,
-, body.page-credit .hero-investment .btn-primary::before,
-, body.page-main .hero-investment .btn-primary::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta::before,
+body.page-influence .keis-header-cta::before,
+body.page-credit .keis-header-cta::before,
+body.page-main .keis-header-cta::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary::before,
+body.page-influence .hero-investment .btn-primary::before,
+body.page-credit .hero-investment .btn-primary::before,
+body.page-main .hero-investment .btn-primary::before,
 body.page-investment .investment-challenges .challenges-cta__btn::before, body.page-influence .investment-challenges .challenges-cta__btn::before, body.page-credit .investment-challenges .challenges-cta__btn::before, body.page-main .investment-challenges .challenges-cta__btn::before{
   content: "";
   position: absolute;
@@ -700,14 +700,14 @@ body.page-investment .investment-challenges .challenges-cta__btn::before, body.p
 }
 
 /* moving sheen */
-body.page-investment .keis-header-cta::after,
-, body.page-influence .keis-header-cta::after,
-, body.page-credit .keis-header-cta::after,
-, body.page-main .keis-header-cta::after,
-body.page-investment .hero-investment .btn-primary::after,
-, body.page-influence .hero-investment .btn-primary::after,
-, body.page-credit .hero-investment .btn-primary::after,
-, body.page-main .hero-investment .btn-primary::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta::after,
+body.page-influence .keis-header-cta::after,
+body.page-credit .keis-header-cta::after,
+body.page-main .keis-header-cta::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary::after,
+body.page-influence .hero-investment .btn-primary::after,
+body.page-credit .hero-investment .btn-primary::after,
+body.page-main .hero-investment .btn-primary::after,
 body.page-investment .investment-challenges .challenges-cta__btn::after, body.page-influence .investment-challenges .challenges-cta__btn::after, body.page-credit .investment-challenges .challenges-cta__btn::after, body.page-main .investment-challenges .challenges-cta__btn::after{
   content: "";
   position: absolute;
@@ -725,14 +725,14 @@ body.page-investment .investment-challenges .challenges-cta__btn::after, body.pa
 }
 
 @media (hover:hover){
-  body.page-investment .keis-header-cta:hover,
-, body.page-influence .keis-header-cta:hover,
-, body.page-credit .keis-header-cta:hover,
-, body.page-main .keis-header-cta:hover,
-  body.page-investment .hero-investment .btn-primary:hover,
-, body.page-influence .hero-investment .btn-primary:hover,
-, body.page-credit .hero-investment .btn-primary:hover,
-, body.page-main .hero-investment .btn-primary:hover,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta:hover,
+body.page-influence .keis-header-cta:hover,
+body.page-credit .keis-header-cta:hover,
+body.page-main .keis-header-cta:hover,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary:hover,
+body.page-influence .hero-investment .btn-primary:hover,
+body.page-credit .hero-investment .btn-primary:hover,
+body.page-main .hero-investment .btn-primary:hover,
   body.page-investment .investment-challenges .challenges-cta__btn:hover, body.page-influence .investment-challenges .challenges-cta__btn:hover, body.page-credit .investment-challenges .challenges-cta__btn:hover, body.page-main .investment-challenges .challenges-cta__btn:hover{
     filter: brightness(1.12) saturate(1.18);
     transform: translateY(-1px);
@@ -743,14 +743,14 @@ body.page-investment .investment-challenges .challenges-cta__btn::after, body.pa
       inset 0 1px 0 rgba(255,255,255,.62);
   }
 
-  body.page-investment .keis-header-cta:hover::after,
-, body.page-influence .keis-header-cta:hover::after,
-, body.page-credit .keis-header-cta:hover::after,
-, body.page-main .keis-header-cta:hover::after,
-  body.page-investment .hero-investment .btn-primary:hover::after,
-, body.page-influence .hero-investment .btn-primary:hover::after,
-, body.page-credit .hero-investment .btn-primary:hover::after,
-, body.page-main .hero-investment .btn-primary:hover::after,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta:hover::after,
+body.page-influence .keis-header-cta:hover::after,
+body.page-credit .keis-header-cta:hover::after,
+body.page-main .keis-header-cta:hover::after,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary:hover::after,
+body.page-influence .hero-investment .btn-primary:hover::after,
+body.page-credit .hero-investment .btn-primary:hover::after,
+body.page-main .hero-investment .btn-primary:hover::after,
   body.page-investment .investment-challenges .challenges-cta__btn:hover::after, body.page-influence .investment-challenges .challenges-cta__btn:hover::after, body.page-credit .investment-challenges .challenges-cta__btn:hover::after, body.page-main .investment-challenges .challenges-cta__btn:hover::after{
     opacity: 1;
     animation: keisGlassSheen 1.1s ease forwards;
@@ -762,14 +762,14 @@ body.page-investment .investment-challenges .challenges-cta__btn::after, body.pa
   to{ transform: translateX(320%) rotate(14deg); }
 }
 
-body.page-investment .keis-header-cta:active,
-, body.page-influence .keis-header-cta:active,
-, body.page-credit .keis-header-cta:active,
-, body.page-main .keis-header-cta:active,
-body.page-investment .hero-investment .btn-primary:active,
-, body.page-influence .hero-investment .btn-primary:active,
-, body.page-credit .hero-investment .btn-primary:active,
-, body.page-main .hero-investment .btn-primary:active,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta:active,
+body.page-influence .keis-header-cta:active,
+body.page-credit .keis-header-cta:active,
+body.page-main .keis-header-cta:active,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary:active,
+body.page-influence .hero-investment .btn-primary:active,
+body.page-credit .hero-investment .btn-primary:active,
+body.page-main .hero-investment .btn-primary:active,
 body.page-investment .investment-challenges .challenges-cta__btn:active, body.page-influence .investment-challenges .challenges-cta__btn:active, body.page-credit .investment-challenges .challenges-cta__btn:active, body.page-main .investment-challenges .challenges-cta__btn:active{
   transform: translateY(0);
   filter: brightness(0.98);
@@ -781,14 +781,14 @@ body.page-investment .keis-header-cta, body.page-influence .keis-header-cta, bod
 }
 
 /* If any of these buttons contain an inline SVG/icon, make it match */
-body.page-investment .keis-header-cta svg,
-, body.page-influence .keis-header-cta svg,
-, body.page-credit .keis-header-cta svg,
-, body.page-main .keis-header-cta svg,
-body.page-investment .hero-investment .btn-primary svg,
-, body.page-influence .hero-investment .btn-primary svg,
-, body.page-credit .hero-investment .btn-primary svg,
-, body.page-main .hero-investment .btn-primary svg,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-cta svg,
+body.page-influence .keis-header-cta svg,
+body.page-credit .keis-header-cta svg,
+body.page-main .keis-header-cta svg,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment .btn-primary svg,
+body.page-influence .hero-investment .btn-primary svg,
+body.page-credit .hero-investment .btn-primary svg,
+body.page-main .hero-investment .btn-primary svg,
 body.page-investment .investment-challenges .challenges-cta__btn svg, body.page-influence .investment-challenges .challenges-cta__btn svg, body.page-credit .investment-challenges .challenges-cta__btn svg, body.page-main .investment-challenges .challenges-cta__btn svg{
   filter: drop-shadow(0 10px 18px rgba(0,0,0,.45));
 }
@@ -874,10 +874,10 @@ body.page-investment .investment-faq .faq-item::after, body.page-influence .inve
   opacity:.55;
 }
 
-body.page-investment .investment-faq .faq-question,
-, body.page-influence .investment-faq .faq-question,
-, body.page-credit .investment-faq .faq-question,
-, body.page-main .investment-faq .faq-question,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-faq .faq-question,
+body.page-influence .investment-faq .faq-question,
+body.page-credit .investment-faq .faq-question,
+body.page-main .investment-faq .faq-question,
 body.page-investment .investment-faq .faq-answer, body.page-influence .investment-faq .faq-answer, body.page-credit .investment-faq .faq-answer, body.page-main .investment-faq .faq-answer{
   position: relative;
   z-index: 1;
@@ -1121,10 +1121,10 @@ body.page-investment .investment-find .find-grid, body.page-influence .investmen
 }
 
 /* Card shell */
-body.page-investment .investment-find .find-map,
-, body.page-influence .investment-find .find-map,
-, body.page-credit .investment-find .find-map,
-, body.page-main .investment-find .find-map,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .find-map,
+body.page-influence .investment-find .find-map,
+body.page-credit .investment-find .find-map,
+body.page-main .investment-find .find-map,
 body.page-investment .investment-find .find-reviews, body.page-influence .investment-find .find-reviews, body.page-credit .investment-find .find-reviews, body.page-main .investment-find .find-reviews{
   position: relative;
   border-radius: 20px;
@@ -1144,10 +1144,10 @@ body.page-investment .investment-find .find-reviews, body.page-influence .invest
   min-height: 420px;
 }
 
-body.page-investment .investment-find .find-map::before,
-, body.page-influence .investment-find .find-map::before,
-, body.page-credit .investment-find .find-map::before,
-, body.page-main .investment-find .find-map::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .find-map::before,
+body.page-influence .investment-find .find-map::before,
+body.page-credit .investment-find .find-map::before,
+body.page-main .investment-find .find-map::before,
 body.page-investment .investment-find .find-reviews::before, body.page-influence .investment-find .find-reviews::before, body.page-credit .investment-find .find-reviews::before, body.page-main .investment-find .find-reviews::before{
   content:"";
   position:absolute;
@@ -1187,10 +1187,10 @@ body.page-investment .investment-find .find-title::after, body.page-influence .i
 }
 
 /* Widget window */
-body.page-investment .investment-find .map-widget,
-, body.page-influence .investment-find .map-widget,
-, body.page-credit .investment-find .map-widget,
-, body.page-main .investment-find .map-widget,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .map-widget,
+body.page-influence .investment-find .map-widget,
+body.page-credit .investment-find .map-widget,
+body.page-main .investment-find .map-widget,
 body.page-investment .investment-find .reviews-widget, body.page-influence .investment-find .reviews-widget, body.page-credit .investment-find .reviews-widget, body.page-main .investment-find .reviews-widget{
   position: relative;
   z-index: 1;
@@ -1206,10 +1206,10 @@ body.page-investment .investment-find .reviews-widget, body.page-influence .inve
 
 /* Keep same visual height in both columns on desktop */
 @media (min-width: 981px){
-  body.page-investment .investment-find .map-widget,
-, body.page-influence .investment-find .map-widget,
-, body.page-credit .investment-find .map-widget,
-, body.page-main .investment-find .map-widget,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .map-widget,
+body.page-influence .investment-find .map-widget,
+body.page-credit .investment-find .map-widget,
+body.page-main .investment-find .map-widget,
   body.page-investment .investment-find .reviews-widget, body.page-influence .investment-find .reviews-widget, body.page-credit .investment-find .reviews-widget, body.page-main .investment-find .reviews-widget{
     min-height: 360px;
   }
@@ -1225,10 +1225,10 @@ body.page-investment .investment-find iframe, body.page-influence .investment-fi
 }
 
 /* Subtle overlay for cohesion (reduces raw white from widgets) */
-body.page-investment .investment-find .map-widget::after,
-, body.page-influence .investment-find .map-widget::after,
-, body.page-credit .investment-find .map-widget::after,
-, body.page-main .investment-find .map-widget::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .map-widget::after,
+body.page-influence .investment-find .map-widget::after,
+body.page-credit .investment-find .map-widget::after,
+body.page-main .investment-find .map-widget::after,
 body.page-investment .investment-find .reviews-widget::after, body.page-influence .investment-find .reviews-widget::after, body.page-credit .investment-find .reviews-widget::after, body.page-main .investment-find .reviews-widget::after{
   content:"";
   position:absolute;
@@ -1244,15 +1244,15 @@ body.page-investment .investment-find .reviews-widget::after, body.page-influenc
 /* Mobile: tighter paddings + taller widgets */
 @media (max-width: 520px){
   body.page-investment .investment-find, body.page-influence .investment-find, body.page-credit .investment-find, body.page-main .investment-find{ padding: 96px 0 108px; }
-  body.page-investment .investment-find .find-map,
-, body.page-influence .investment-find .find-map,
-, body.page-credit .investment-find .find-map,
-, body.page-main .investment-find .find-map,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .find-map,
+body.page-influence .investment-find .find-map,
+body.page-credit .investment-find .find-map,
+body.page-main .investment-find .find-map,
   body.page-investment .investment-find .find-reviews, body.page-influence .investment-find .find-reviews, body.page-credit .investment-find .find-reviews, body.page-main .investment-find .find-reviews{ padding: 16px; border-radius: 18px; min-height: 440px; }
-  body.page-investment .investment-find .map-widget,
-, body.page-influence .investment-find .map-widget,
-, body.page-credit .investment-find .map-widget,
-, body.page-main .investment-find .map-widget,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .map-widget,
+body.page-influence .investment-find .map-widget,
+body.page-credit .investment-find .map-widget,
+body.page-main .investment-find .map-widget,
   body.page-investment .investment-find .reviews-widget, body.page-influence .investment-find .reviews-widget, body.page-credit .investment-find .reviews-widget, body.page-main .investment-find .reviews-widget{ min-height: 380px; }
 }
 
@@ -1577,7 +1577,7 @@ body.page-investment .investment-challenges, body.page-influence .investment-cha
   position: relative;
   padding: 120px 0 150px;
   background-color: var(--bg0);
-  background-image: url('/fraud/landing/assets/block/people.png');
+  background-image: url('/fraud/assets/block/people.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1728,10 +1728,10 @@ body.page-investment .investment-challenges .challenge-icon img, body.page-influ
 @media (max-width: 520px){
   body.page-investment .investment-challenges, body.page-influence .investment-challenges, body.page-credit .investment-challenges, body.page-main .investment-challenges{padding: 96px 0 120px;}
   body.page-investment .investment-challenges .challenge-card, body.page-influence .investment-challenges .challenge-card, body.page-credit .investment-challenges .challenge-card, body.page-main .investment-challenges .challenge-card{padding: 16px 16px 14px;}
-  body.page-investment .investment-challenges .challenge-card h3,
-, body.page-influence .investment-challenges .challenge-card h3,
-, body.page-credit .investment-challenges .challenge-card h3,
-, body.page-main .investment-challenges .challenge-card h3,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-challenges .challenge-card h3,
+body.page-influence .investment-challenges .challenge-card h3,
+body.page-credit .investment-challenges .challenge-card h3,
+body.page-main .investment-challenges .challenge-card h3,
   body.page-investment .investment-challenges .challenge-card p, body.page-influence .investment-challenges .challenge-card p, body.page-credit .investment-challenges .challenge-card p, body.page-main .investment-challenges .challenge-card p{padding-right: 0;}
   body.page-investment .investment-challenges .challenge-tag, body.page-influence .investment-challenges .challenge-tag, body.page-credit .investment-challenges .challenge-tag, body.page-main .investment-challenges .challenge-tag{font-size: 0.70rem;}
 }
@@ -1869,91 +1869,91 @@ body.page-investment .investment-challenges .challenges-cta__btn:hover, body.pag
    ========================= */
 
 /* Kill any legacy divider elements if they still exist in HTML */
-body.page-investment .keis-section-divider,
-, body.page-influence .keis-section-divider,
-, body.page-credit .keis-section-divider,
-, body.page-main .keis-section-divider,
-body.page-investment .keis-divider,
-, body.page-influence .keis-divider,
-, body.page-credit .keis-divider,
-, body.page-main .keis-divider,
-body.page-investment [class*="keis-divider"],
-, body.page-influence [class*="keis-divider"],
-, body.page-credit [class*="keis-divider"],
-, body.page-main [class*="keis-divider"],
-body.page-investment .keis-scenarios-seam,
-, body.page-influence .keis-scenarios-seam,
-, body.page-credit .keis-scenarios-seam,
-, body.page-main .keis-scenarios-seam,
-body.page-investment [class*="seam"],
-, body.page-influence [class*="seam"],
-, body.page-credit [class*="seam"],
-, body.page-main [class*="seam"],
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-section-divider,
+body.page-influence .keis-section-divider,
+body.page-credit .keis-section-divider,
+body.page-main .keis-section-divider,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-divider,
+body.page-influence .keis-divider,
+body.page-credit .keis-divider,
+body.page-main .keis-divider,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="keis-divider"],
+body.page-influence [class*="keis-divider"],
+body.page-credit [class*="keis-divider"],
+body.page-main [class*="keis-divider"],
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-scenarios-seam,
+body.page-influence .keis-scenarios-seam,
+body.page-credit .keis-scenarios-seam,
+body.page-main .keis-scenarios-seam,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="seam"],
+body.page-influence [class*="seam"],
+body.page-credit [class*="seam"],
+body.page-main [class*="seam"],
 body.page-investment [class*="divider"], body.page-influence [class*="divider"], body.page-credit [class*="divider"], body.page-main [class*="divider"]{
   display: none !important;
 }
 
-body.page-investment .keis-section-divider::before,
-, body.page-influence .keis-section-divider::before,
-, body.page-credit .keis-section-divider::before,
-, body.page-main .keis-section-divider::before,
-body.page-investment .keis-section-divider::after,
-, body.page-influence .keis-section-divider::after,
-, body.page-credit .keis-section-divider::after,
-, body.page-main .keis-section-divider::after,
-body.page-investment .keis-divider::before,
-, body.page-influence .keis-divider::before,
-, body.page-credit .keis-divider::before,
-, body.page-main .keis-divider::before,
-body.page-investment .keis-divider::after,
-, body.page-influence .keis-divider::after,
-, body.page-credit .keis-divider::after,
-, body.page-main .keis-divider::after,
-body.page-investment [class*="keis-divider"]::before,
-, body.page-influence [class*="keis-divider"]::before,
-, body.page-credit [class*="keis-divider"]::before,
-, body.page-main [class*="keis-divider"]::before,
-body.page-investment [class*="keis-divider"]::after,
-, body.page-influence [class*="keis-divider"]::after,
-, body.page-credit [class*="keis-divider"]::after,
-, body.page-main [class*="keis-divider"]::after,
-body.page-investment .keis-scenarios-seam::before,
-, body.page-influence .keis-scenarios-seam::before,
-, body.page-credit .keis-scenarios-seam::before,
-, body.page-main .keis-scenarios-seam::before,
-body.page-investment .keis-scenarios-seam::after,
-, body.page-influence .keis-scenarios-seam::after,
-, body.page-credit .keis-scenarios-seam::after,
-, body.page-main .keis-scenarios-seam::after,
-body.page-investment [class*="seam"]::before,
-, body.page-influence [class*="seam"]::before,
-, body.page-credit [class*="seam"]::before,
-, body.page-main [class*="seam"]::before,
-body.page-investment [class*="seam"]::after,
-, body.page-influence [class*="seam"]::after,
-, body.page-credit [class*="seam"]::after,
-, body.page-main [class*="seam"]::after,
-body.page-investment [class*="divider"]::before,
-, body.page-influence [class*="divider"]::before,
-, body.page-credit [class*="divider"]::before,
-, body.page-main [class*="divider"]::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-section-divider::before,
+body.page-influence .keis-section-divider::before,
+body.page-credit .keis-section-divider::before,
+body.page-main .keis-section-divider::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-section-divider::after,
+body.page-influence .keis-section-divider::after,
+body.page-credit .keis-section-divider::after,
+body.page-main .keis-section-divider::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-divider::before,
+body.page-influence .keis-divider::before,
+body.page-credit .keis-divider::before,
+body.page-main .keis-divider::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-divider::after,
+body.page-influence .keis-divider::after,
+body.page-credit .keis-divider::after,
+body.page-main .keis-divider::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="keis-divider"]::before,
+body.page-influence [class*="keis-divider"]::before,
+body.page-credit [class*="keis-divider"]::before,
+body.page-main [class*="keis-divider"]::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="keis-divider"]::after,
+body.page-influence [class*="keis-divider"]::after,
+body.page-credit [class*="keis-divider"]::after,
+body.page-main [class*="keis-divider"]::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-scenarios-seam::before,
+body.page-influence .keis-scenarios-seam::before,
+body.page-credit .keis-scenarios-seam::before,
+body.page-main .keis-scenarios-seam::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-scenarios-seam::after,
+body.page-influence .keis-scenarios-seam::after,
+body.page-credit .keis-scenarios-seam::after,
+body.page-main .keis-scenarios-seam::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="seam"]::before,
+body.page-influence [class*="seam"]::before,
+body.page-credit [class*="seam"]::before,
+body.page-main [class*="seam"]::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="seam"]::after,
+body.page-influence [class*="seam"]::after,
+body.page-credit [class*="seam"]::after,
+body.page-main [class*="seam"]::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) [class*="divider"]::before,
+body.page-influence [class*="divider"]::before,
+body.page-credit [class*="divider"]::before,
+body.page-main [class*="divider"]::before,
 body.page-investment [class*="divider"]::after, body.page-influence [class*="divider"]::after, body.page-credit [class*="divider"]::after, body.page-main [class*="divider"]::after{
   content: none !important;
 }
 
 /* Also disable any pseudo-divider on sections (safety net) */
-body.page-investment .investment-scenarios::before,
-, body.page-influence .investment-scenarios::before,
-, body.page-credit .investment-scenarios::before,
-, body.page-main .investment-scenarios::before,
-body.page-investment .investment-scenarios::after,
-, body.page-influence .investment-scenarios::after,
-, body.page-credit .investment-scenarios::after,
-, body.page-main .investment-scenarios::after,
-body.page-investment .trust-parallax::before,
-, body.page-influence .trust-parallax::before,
-, body.page-credit .trust-parallax::before,
-, body.page-main .trust-parallax::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios::before,
+body.page-influence .investment-scenarios::before,
+body.page-credit .investment-scenarios::before,
+body.page-main .investment-scenarios::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios::after,
+body.page-influence .investment-scenarios::after,
+body.page-credit .investment-scenarios::after,
+body.page-main .investment-scenarios::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .trust-parallax::before,
+body.page-influence .trust-parallax::before,
+body.page-credit .trust-parallax::before,
+body.page-main .trust-parallax::before,
 body.page-investment .trust-parallax::after, body.page-influence .trust-parallax::after, body.page-credit .trust-parallax::after, body.page-main .trust-parallax::after{
   content: none !important;
 }
@@ -2367,7 +2367,7 @@ body.page-investment .hero-investment::before, body.page-influence .hero-investm
       rgba(0,0,0,0) 7px
     ),
 
-  var(--hero-offer, url('/fraud/landing/assets/block/offer.jpeg'));
+  var(--hero-offer, url('/fraud/assets/block/offer.jpeg'));
 
   background-size: cover;
   background-position: center;
@@ -2379,9 +2379,9 @@ body.page-investment .hero-investment::before, body.page-influence .hero-investm
   Use body page class to swap only the image URL while preserving
   all gradients, overlays and sizing defined above. Default fallback
   is the original offer.jpeg so nothing breaks if class is missing. */
-.page-main{ --hero-offer: url('/fraud/landing/assets/block/offer5.jpeg'); }
-.page-influence{ --hero-offer: url('/fraud/landing/assets/block/offer3.jpeg'); }
-.page-credit{ --hero-offer: url('/fraud/landing/assets/block/offer2.jpeg'); }
+.page-main{ --hero-offer: url('/fraud/assets/block/offer5.jpeg'); }
+.page-influence{ --hero-offer: url('/fraud/assets/block/offer3.jpeg'); }
+.page-credit{ --hero-offer: url('/fraud/assets/block/offer2.jpeg'); }
 /* Desktop: уводим hero-контент левее (как в референсе) */
 @media (min-width:1100px){
   .hero-investment .section-container{
@@ -3432,7 +3432,7 @@ body.page-investment .investment-scenarios, body.page-influence .investment-scen
   --scenarios-bottom-gap: 0px;
   padding: 88px 0 0;
   background-color: var(--bg0);
-  background-image: url('/fraud/landing/assets/block/kazan4.png');
+  background-image: url('/fraud/assets/block/kazan4.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -3690,12 +3690,12 @@ body.page-investment .investment-scenarios > .section-container, body.page-influ
 }
 
 /* Фоновые картинки для историй (оставляем) */
-.scenario-slide--angle-1 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_1.png'); }
-.scenario-slide--angle-2 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_4.png'); }
-.scenario-slide--angle-3 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_3.png'); }
-.scenario-slide--angle-4 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_2.png'); }
-.scenario-slide--angle-5 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_5.png'); }
-.scenario-slide--angle-6 .scenario-slide-media{ background-image:url('/fraud/landing/assets/scenarios/sc_6.png'); }
+.scenario-slide--angle-1 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_1.png'); }
+.scenario-slide--angle-2 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_4.png'); }
+.scenario-slide--angle-3 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_3.png'); }
+.scenario-slide--angle-4 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_2.png'); }
+.scenario-slide--angle-5 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_5.png'); }
+.scenario-slide--angle-6 .scenario-slide-media{ background-image:url('/fraud/assets/scenarios/sc_6.png'); }
 
 /* навигация карусели — под карточками, стеклянные кнопки */
 .scenarios-band-controls{
@@ -3817,7 +3817,7 @@ body.page-investment .investment-scenarios > .section-container, body.page-influ
     /* дальше существующие radial + url(...) */
     radial-gradient(1200px 820px at 22% 42%, rgba(0,0,0,.60), transparent 62%),
     radial-gradient(1200px 940px at 86% 52%, rgba(0,0,0,.52), transparent 64%),
-    url('/fraud/landing/assets/block/team.png');
+    url('/fraud/assets/block/team.png');
 
   background-size:cover;
   background-position:center 12%;
@@ -4113,7 +4113,7 @@ body.page-investment .investment-scenarios > .section-container, body.page-influ
     radial-gradient(1000px 520px at 14% 18%, rgba(255,160,80,0.12), transparent 46%),
     radial-gradient(1200px 520px at 86% 30%, rgba(0,0,0,0.50), transparent 60%),
     linear-gradient(180deg, rgba(10,6,4,0.92), rgba(12,8,6,0.86)),
-    url('/fraud/landing/assets/block/priznak.png');
+    url('/fraud/assets/block/priznak.png');
 
   background-size: auto, auto, auto, cover;
   background-position: center, center, center, center;
@@ -4479,10 +4479,10 @@ body.page-investment .investment-find .find-title , body.page-influence .investm
   margin-bottom: 12px;
 }
 
-body.page-investment .investment-find .map-widget,
-, body.page-influence .investment-find .map-widget,
-, body.page-credit .investment-find .map-widget,
-, body.page-main .investment-find .map-widget,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-find .map-widget,
+body.page-influence .investment-find .map-widget,
+body.page-credit .investment-find .map-widget,
+body.page-main .investment-find .map-widget,
 body.page-investment .investment-find .reviews-widget , body.page-influence .investment-find .reviews-widget , body.page-credit .investment-find .reviews-widget , body.page-main .investment-find .reviews-widget {
   width: 100%;
   overflow: hidden;
@@ -4531,14 +4531,14 @@ body.page-investment section:not(.hero-investment):not(.investment-scenarios), b
 }
 
 /* Глобальный soft-glass */
-body.page-investment .glass,
-, body.page-influence .glass,
-, body.page-credit .glass,
-, body.page-main .glass,
-body.page-investment .card,
-, body.page-influence .card,
-, body.page-credit .card,
-, body.page-main .card,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .glass,
+body.page-influence .glass,
+body.page-credit .glass,
+body.page-main .glass,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .card,
+body.page-influence .card,
+body.page-credit .card,
+body.page-main .card,
 body.page-investment article:not(.scenario-slide), body.page-influence article:not(.scenario-slide), body.page-credit article:not(.scenario-slide), body.page-main article:not(.scenario-slide){
   border-radius: 20px;
   background:
@@ -4559,84 +4559,84 @@ body.page-investment article:not(.scenario-slide), body.page-influence article:n
 }
 
 /* Заголовки — единый ритм */
-body.page-investment h1,
-, body.page-influence h1,
-, body.page-credit h1,
-, body.page-main h1,
-body.page-investment h2,
-, body.page-influence h2,
-, body.page-credit h2,
-, body.page-main h2,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) h1,
+body.page-influence h1,
+body.page-credit h1,
+body.page-main h1,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) h2,
+body.page-influence h2,
+body.page-credit h2,
+body.page-main h2,
 body.page-investment h3, body.page-influence h3, body.page-credit h3, body.page-main h3{
   font-family: "Roboto Slab", serif;
   letter-spacing: .01em;
 }
 
 /* Видео / фоновые секции — чтобы ничего не резалось */
-body.page-investment video,
-, body.page-influence video,
-, body.page-credit video,
-, body.page-main video,
-body.page-investment .parallax,
-, body.page-influence .parallax,
-, body.page-credit .parallax,
-, body.page-main .parallax,
-body.page-investment .trust-parallax,
-, body.page-influence .trust-parallax,
-, body.page-credit .trust-parallax,
-, body.page-main .trust-parallax,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) video,
+body.page-influence video,
+body.page-credit video,
+body.page-main video,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .parallax,
+body.page-influence .parallax,
+body.page-credit .parallax,
+body.page-main .parallax,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .trust-parallax,
+body.page-influence .trust-parallax,
+body.page-credit .trust-parallax,
+body.page-main .trust-parallax,
 body.page-investment .investment-scenarios, body.page-influence .investment-scenarios, body.page-credit .investment-scenarios, body.page-main .investment-scenarios{
   overflow: visible !important;
 }
 
 /* КАРТОЧКИ ВЕЗДЕ — защита от обрезки */
-body.page-investment .hero-benefit-card,
-, body.page-influence .hero-benefit-card,
-, body.page-credit .hero-benefit-card,
-, body.page-main .hero-benefit-card,
-body.page-investment .trust-card,
-, body.page-influence .trust-card,
-, body.page-credit .trust-card,
-, body.page-main .trust-card,
-body.page-investment .sign-card,
-, body.page-influence .sign-card,
-, body.page-credit .sign-card,
-, body.page-main .sign-card,
-body.page-investment .timeline-step,
-, body.page-influence .timeline-step,
-, body.page-credit .timeline-step,
-, body.page-main .timeline-step,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-benefit-card,
+body.page-influence .hero-benefit-card,
+body.page-credit .hero-benefit-card,
+body.page-main .hero-benefit-card,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .trust-card,
+body.page-influence .trust-card,
+body.page-credit .trust-card,
+body.page-main .trust-card,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .sign-card,
+body.page-influence .sign-card,
+body.page-credit .sign-card,
+body.page-main .sign-card,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .timeline-step,
+body.page-influence .timeline-step,
+body.page-credit .timeline-step,
+body.page-main .timeline-step,
 body.page-investment .case-card, body.page-influence .case-card, body.page-credit .case-card, body.page-main .case-card{
   min-height: unset !important;
   height: auto !important;
 }
 
 /* GRID SAFETY — авто‑адаптация */
-body.page-investment .hero-benefits-grid,
-, body.page-influence .hero-benefits-grid,
-, body.page-credit .hero-benefits-grid,
-, body.page-main .hero-benefits-grid,
-body.page-investment .trust-cards-grid,
-, body.page-influence .trust-cards-grid,
-, body.page-credit .trust-cards-grid,
-, body.page-main .trust-cards-grid,
-body.page-investment .signs-grid,
-, body.page-influence .signs-grid,
-, body.page-credit .signs-grid,
-, body.page-main .signs-grid,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-benefits-grid,
+body.page-influence .hero-benefits-grid,
+body.page-credit .hero-benefits-grid,
+body.page-main .hero-benefits-grid,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .trust-cards-grid,
+body.page-influence .trust-cards-grid,
+body.page-credit .trust-cards-grid,
+body.page-main .trust-cards-grid,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .signs-grid,
+body.page-influence .signs-grid,
+body.page-credit .signs-grid,
+body.page-main .signs-grid,
 body.page-investment .cases-grid, body.page-influence .cases-grid, body.page-credit .cases-grid, body.page-main .cases-grid{
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 /* Капсулы (бейджи, подписи) */
-body.page-investment .badge,
-, body.page-influence .badge,
-, body.page-credit .badge,
-, body.page-main .badge,
-body.page-investment .capsule,
-, body.page-influence .capsule,
-, body.page-credit .capsule,
-, body.page-main .capsule,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .badge,
+body.page-influence .badge,
+body.page-credit .badge,
+body.page-main .badge,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .capsule,
+body.page-influence .capsule,
+body.page-credit .capsule,
+body.page-main .capsule,
 body.page-investment .tag, body.page-influence .tag, body.page-credit .tag, body.page-main .tag{
   display:inline-flex;
   align-items:center;
@@ -4648,17 +4648,17 @@ body.page-investment .tag, body.page-influence .tag, body.page-credit .tag, body
 }
 
 /* CTA — единый стиль */
-body.page-investment .btn-primary,
-, body.page-influence .btn-primary,
-, body.page-credit .btn-primary,
-, body.page-main .btn-primary,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .btn-primary,
+body.page-influence .btn-primary,
+body.page-credit .btn-primary,
+body.page-main .btn-primary,
 body.page-investment .keis-header-cta, body.page-influence .keis-header-cta, body.page-credit .keis-header-cta, body.page-main .keis-header-cta{
   transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
 }
-body.page-investment .btn-primary:hover,
-, body.page-influence .btn-primary:hover,
-, body.page-credit .btn-primary:hover,
-, body.page-main .btn-primary:hover,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .btn-primary:hover,
+body.page-influence .btn-primary:hover,
+body.page-credit .btn-primary:hover,
+body.page-main .btn-primary:hover,
 body.page-investment .keis-header-cta:hover, body.page-influence .keis-header-cta:hover, body.page-credit .keis-header-cta:hover, body.page-main .keis-header-cta:hover{
   transform: translateY(-1px);
   box-shadow: 0 18px 34px rgba(249,115,22,.35);
@@ -4835,10 +4835,10 @@ body.page-investment .investment-scenarios, body.page-influence .investment-scen
 }
 
 /* base for both bands */
-body.page-investment .investment-scenarios::before,
-, body.page-influence .investment-scenarios::before,
-, body.page-credit .investment-scenarios::before,
-, body.page-main .investment-scenarios::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios::before,
+body.page-influence .investment-scenarios::before,
+body.page-credit .investment-scenarios::before,
+body.page-main .investment-scenarios::before,
 body.page-investment .investment-scenarios::after, body.page-influence .investment-scenarios::after, body.page-credit .investment-scenarios::after, body.page-main .investment-scenarios::after{
   content:"";
   position:absolute;
@@ -4889,26 +4889,26 @@ body.page-investment .investment-scenarios::after, body.page-influence .investme
 /* LATE OVERRIDE: ensure surge + seam are visible and harmonized as a single
    visual unit placed under the glass bridge. This replaces an earlier 'hide'
    override so we can tune the appearance consistently. */
-body.page-investment .keis-surge-divider,
-, body.page-influence .keis-surge-divider,
-, body.page-credit .keis-surge-divider,
-, body.page-main .keis-surge-divider,
-body.page-investment .keis-surge-divider::before,
-, body.page-influence .keis-surge-divider::before,
-, body.page-credit .keis-surge-divider::before,
-, body.page-main .keis-surge-divider::before,
-body.page-investment .keis-surge-divider::after,
-, body.page-influence .keis-surge-divider::after,
-, body.page-credit .keis-surge-divider::after,
-, body.page-main .keis-surge-divider::after,
-body.page-investment .investment-scenarios .keis-divider--scenarios-seam,
-, body.page-influence .investment-scenarios .keis-divider--scenarios-seam,
-, body.page-credit .investment-scenarios .keis-divider--scenarios-seam,
-, body.page-main .investment-scenarios .keis-divider--scenarios-seam,
-body.page-investment .investment-scenarios .keis-divider--scenarios-seam::before,
-, body.page-influence .investment-scenarios .keis-divider--scenarios-seam::before,
-, body.page-credit .investment-scenarios .keis-divider--scenarios-seam::before,
-, body.page-main .investment-scenarios .keis-divider--scenarios-seam::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-surge-divider,
+body.page-influence .keis-surge-divider,
+body.page-credit .keis-surge-divider,
+body.page-main .keis-surge-divider,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-surge-divider::before,
+body.page-influence .keis-surge-divider::before,
+body.page-credit .keis-surge-divider::before,
+body.page-main .keis-surge-divider::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-surge-divider::after,
+body.page-influence .keis-surge-divider::after,
+body.page-credit .keis-surge-divider::after,
+body.page-main .keis-surge-divider::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .keis-divider--scenarios-seam,
+body.page-influence .investment-scenarios .keis-divider--scenarios-seam,
+body.page-credit .investment-scenarios .keis-divider--scenarios-seam,
+body.page-main .investment-scenarios .keis-divider--scenarios-seam,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .keis-divider--scenarios-seam::before,
+body.page-influence .investment-scenarios .keis-divider--scenarios-seam::before,
+body.page-credit .investment-scenarios .keis-divider--scenarios-seam::before,
+body.page-main .investment-scenarios .keis-divider--scenarios-seam::before,
 body.page-investment .investment-scenarios .keis-divider--scenarios-seam::after , body.page-influence .investment-scenarios .keis-divider--scenarios-seam::after , body.page-credit .investment-scenarios .keis-divider--scenarios-seam::after , body.page-main .investment-scenarios .keis-divider--scenarios-seam::after {
   display: block !important;
   visibility: visible !important;
@@ -5124,20 +5124,20 @@ body.page-investment .keis-header-icon, body.page-influence .keis-header-icon, b
   height: 32px;
 }
 
-body.page-investment .keis-header-icon--telegram,
-, body.page-influence .keis-header-icon--telegram,
-, body.page-credit .keis-header-icon--telegram,
-, body.page-main .keis-header-icon--telegram,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-icon--telegram,
+body.page-influence .keis-header-icon--telegram,
+body.page-credit .keis-header-icon--telegram,
+body.page-main .keis-header-icon--telegram,
 body.page-investment .keis-header-icon--whats, body.page-influence .keis-header-icon--whats, body.page-credit .keis-header-icon--whats, body.page-main .keis-header-icon--whats{
   transition: transform .16s ease, filter .16s ease;
   transform-origin: 50% 50%;
 }
 
 @media (hover:hover){
-  body.page-investment .keis-header-icon--telegram:hover,
-, body.page-influence .keis-header-icon--telegram:hover,
-, body.page-credit .keis-header-icon--telegram:hover,
-, body.page-main .keis-header-icon--telegram:hover,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-icon--telegram:hover,
+body.page-influence .keis-header-icon--telegram:hover,
+body.page-credit .keis-header-icon--telegram:hover,
+body.page-main .keis-header-icon--telegram:hover,
   body.page-investment .keis-header-icon--whats:hover, body.page-influence .keis-header-icon--whats:hover, body.page-credit .keis-header-icon--whats:hover, body.page-main .keis-header-icon--whats:hover{
     transform: scale(1.12);
     filter: brightness(1.08);
@@ -5320,10 +5320,10 @@ body.page-investment .keis-header-icon, body.page-influence .keis-header-icon, b
 }
 
 @media (hover:hover){
-  body.page-investment .keis-header-icon--telegram:hover,
-, body.page-influence .keis-header-icon--telegram:hover,
-, body.page-credit .keis-header-icon--telegram:hover,
-, body.page-main .keis-header-icon--telegram:hover,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-icon--telegram:hover,
+body.page-influence .keis-header-icon--telegram:hover,
+body.page-credit .keis-header-icon--telegram:hover,
+body.page-main .keis-header-icon--telegram:hover,
   body.page-investment .keis-header-icon--whats:hover, body.page-influence .keis-header-icon--whats:hover, body.page-credit .keis-header-icon--whats:hover, body.page-main .keis-header-icon--whats:hover{
     transform: scale(1.08);
     opacity: 1;
@@ -5506,10 +5506,10 @@ body.page-investment .keis-header-contacts, body.page-influence .keis-header-con
   flex: 0 0 auto;
 }
 
-/* Phone/icon sizes уже заданы выше через body.page-investment .keis-header-icon */
-, body.page-influence .keis-header-icon */
-, body.page-credit .keis-header-icon */
-, body.page-main .keis-header-icon */
+/* Phone/icon sizes уже заданы выше через :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-icon */
+body.page-influence .keis-header-icon */
+body.page-credit .keis-header-icon */
+body.page-main .keis-header-icon */
 
 /* Burger icon: keep compact on all sizes */
 body.page-investment .keis-header-burger-img, body.page-influence .keis-header-burger-img, body.page-credit .keis-header-burger-img, body.page-main .keis-header-burger-img{
@@ -5544,27 +5544,27 @@ body.page-investment .keis-header, body.page-influence .keis-header, body.page-c
 }
 
 /* ниже шапки — ВСЁ всегда ниже */
-body.page-investment section,
-, body.page-influence section,
-, body.page-credit section,
-, body.page-main section,
-body.page-investment .hero-investment,
-, body.page-influence .hero-investment,
-, body.page-credit .hero-investment,
-, body.page-main .hero-investment,
-body.page-investment .investment-scenarios,
-, body.page-influence .investment-scenarios,
-, body.page-credit .investment-scenarios,
-, body.page-main .investment-scenarios,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) section,
+body.page-influence section,
+body.page-credit section,
+body.page-main section,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .hero-investment,
+body.page-influence .hero-investment,
+body.page-credit .hero-investment,
+body.page-main .hero-investment,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios,
+body.page-influence .investment-scenarios,
+body.page-credit .investment-scenarios,
+body.page-main .investment-scenarios,
 body.page-investment .trust-parallax, body.page-influence .trust-parallax, body.page-credit .trust-parallax, body.page-main .trust-parallax{
   position: relative;
   z-index: 1;
 }
 
-body.page-investment .keis-divider,
-, body.page-influence .keis-divider,
-, body.page-credit .keis-divider,
-, body.page-main .keis-divider,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-divider,
+body.page-influence .keis-divider,
+body.page-credit .keis-divider,
+body.page-main .keis-divider,
 body.page-investment .keis-scenarios-seam, body.page-influence .keis-scenarios-seam, body.page-credit .keis-scenarios-seam, body.page-main .keis-scenarios-seam{
   position: relative;
   z-index: 2 !important;
@@ -5686,10 +5686,10 @@ body.page-investment .keis-surge-divider, body.page-influence .keis-surge-divide
   overflow: visible;
 }
 
-body.page-investment .keis-surge-divider::before,
-, body.page-influence .keis-surge-divider::before,
-, body.page-credit .keis-surge-divider::before,
-, body.page-main .keis-surge-divider::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-surge-divider::before,
+body.page-influence .keis-surge-divider::before,
+body.page-credit .keis-surge-divider::before,
+body.page-main .keis-surge-divider::before,
 body.page-investment .keis-surge-divider::after, body.page-influence .keis-surge-divider::after, body.page-credit .keis-surge-divider::after, body.page-main .keis-surge-divider::after{
   content: "";
   position: absolute;
@@ -5858,10 +5858,10 @@ body.page-investment .scenarios-trust-bridge__text::before, body.page-influence 
 
 @media (max-width: 900px){
   body.page-investment .scenarios-trust-bridge, body.page-influence .scenarios-trust-bridge, body.page-credit .scenarios-trust-bridge, body.page-main .scenarios-trust-bridge{ padding: 22px 0; }
-  body.page-investment .scenarios-trust-bridge::before,
-, body.page-influence .scenarios-trust-bridge::before,
-, body.page-credit .scenarios-trust-bridge::before,
-, body.page-main .scenarios-trust-bridge::before,
+  :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .scenarios-trust-bridge::before,
+body.page-influence .scenarios-trust-bridge::before,
+body.page-credit .scenarios-trust-bridge::before,
+body.page-main .scenarios-trust-bridge::before,
   body.page-investment .scenarios-trust-bridge::after, body.page-influence .scenarios-trust-bridge::after, body.page-credit .scenarios-trust-bridge::after, body.page-main .scenarios-trust-bridge::after{
     height: 104px;
     /* для мобильных немного меньше смещение вниз чтобы не нарушать верстку */
@@ -6259,7 +6259,7 @@ body.page-investment .keis-header-nav a[data-submenu-trigger]::after, body.page-
   width: 14px;
   height: 14px;
   transform: translateY(-50%) rotate(0deg);
-  background: url('/fraud/landing/assets/icons/down-chevron.png') center/contain no-repeat;
+  background: url('/fraud/assets/icons/down-chevron.png') center/contain no-repeat;
   opacity: .9;
   transition: transform .18s ease, opacity .18s ease;
 }
@@ -6269,10 +6269,10 @@ body.page-investment .keis-header-nav .has-children.is-open > a[data-submenu-tri
   opacity: 1;
 }
 
-/* Header icons: размер уже задан выше через body.page-investment .keis-header-icon */
-, body.page-influence .keis-header-icon */
-, body.page-credit .keis-header-icon */
-, body.page-main .keis-header-icon */
+/* Header icons: размер уже задан выше через :where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-header-icon */
+body.page-influence .keis-header-icon */
+body.page-credit .keis-header-icon */
+body.page-main .keis-header-icon */
 
 /* Burger: rotate 90° when open */
 body.page-investment .keis-header-burger-img, body.page-influence .keis-header-burger-img, body.page-credit .keis-header-burger-img, body.page-main .keis-header-burger-img{
@@ -6372,14 +6372,14 @@ html bodybody.page-investment .investment-signs .sign-card, body.page-influence 
 /* Keep marquee animation always running even on hover/focus. Some earlier
    rules pause the track via :hover { animation-play-state: paused } — we
    override late to ensure continuous loop regardless of pointer. */
-html bodybody.page-investment .keis-marquee:hover .keis-marquee__track,
-, body.page-influence .keis-marquee:hover .keis-marquee__track,
-, body.page-credit .keis-marquee:hover .keis-marquee__track,
-, body.page-main .keis-marquee:hover .keis-marquee__track,
-html bodybody.page-investment .keis-marquee:focus .keis-marquee__track,
-, body.page-influence .keis-marquee:focus .keis-marquee__track,
-, body.page-credit .keis-marquee:focus .keis-marquee__track,
-, body.page-main .keis-marquee:focus .keis-marquee__track,
+html body:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-marquee:hover .keis-marquee__track,
+body.page-influence .keis-marquee:hover .keis-marquee__track,
+body.page-credit .keis-marquee:hover .keis-marquee__track,
+body.page-main .keis-marquee:hover .keis-marquee__track,
+html body:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .keis-marquee:focus .keis-marquee__track,
+body.page-influence .keis-marquee:focus .keis-marquee__track,
+body.page-credit .keis-marquee:focus .keis-marquee__track,
+body.page-main .keis-marquee:focus .keis-marquee__track,
 html bodybody.page-investment .keis-marquee .keis-marquee__track, body.page-influence .keis-marquee .keis-marquee__track, body.page-credit .keis-marquee .keis-marquee__track, body.page-main .keis-marquee .keis-marquee__track{
   -webkit-animation-play-state: running !important;
   animation-play-state: running !important;
@@ -6391,18 +6391,18 @@ html bodybody.page-investment .keis-marquee .keis-marquee__track, body.page-infl
    ========================================= */
 
 /* УБИВАЕМ ВСЕ псевдо-рамки карточек */
-body.page-investment .investment-scenarios .scenario-card::before,
-, body.page-influence .investment-scenarios .scenario-card::before,
-, body.page-credit .investment-scenarios .scenario-card::before,
-, body.page-main .investment-scenarios .scenario-card::before,
-body.page-investment .investment-scenarios .scenario-card::after,
-, body.page-influence .investment-scenarios .scenario-card::after,
-, body.page-credit .investment-scenarios .scenario-card::after,
-, body.page-main .investment-scenarios .scenario-card::after,
-body.page-investment .investment-scenarios .scenario-card *::before,
-, body.page-influence .investment-scenarios .scenario-card *::before,
-, body.page-credit .investment-scenarios .scenario-card *::before,
-, body.page-main .investment-scenarios .scenario-card *::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-card::before,
+body.page-influence .investment-scenarios .scenario-card::before,
+body.page-credit .investment-scenarios .scenario-card::before,
+body.page-main .investment-scenarios .scenario-card::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-card::after,
+body.page-influence .investment-scenarios .scenario-card::after,
+body.page-credit .investment-scenarios .scenario-card::after,
+body.page-main .investment-scenarios .scenario-card::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-card *::before,
+body.page-influence .investment-scenarios .scenario-card *::before,
+body.page-credit .investment-scenarios .scenario-card *::before,
+body.page-main .investment-scenarios .scenario-card *::before,
 body.page-investment .investment-scenarios .scenario-card *::after, body.page-influence .investment-scenarios .scenario-card *::after, body.page-credit .investment-scenarios .scenario-card *::after, body.page-main .investment-scenarios .scenario-card *::after{
   content: none !important;
   display: none !important;
@@ -6519,18 +6519,18 @@ body.page-investment .investment-scenarios .scenario-slide, body.page-influence 
 }
 
 /* remove any decorative inner orange frame made by pseudo elements */
-body.page-investment .investment-scenarios .scenario-slide::before,
-, body.page-influence .investment-scenarios .scenario-slide::before,
-, body.page-credit .investment-scenarios .scenario-slide::before,
-, body.page-main .investment-scenarios .scenario-slide::before,
-body.page-investment .investment-scenarios .scenario-slide::after,
-, body.page-influence .investment-scenarios .scenario-slide::after,
-, body.page-credit .investment-scenarios .scenario-slide::after,
-, body.page-main .investment-scenarios .scenario-slide::after,
-body.page-investment .investment-scenarios .scenario-slide-body::before,
-, body.page-influence .investment-scenarios .scenario-slide-body::before,
-, body.page-credit .investment-scenarios .scenario-slide-body::before,
-, body.page-main .investment-scenarios .scenario-slide-body::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-slide::before,
+body.page-influence .investment-scenarios .scenario-slide::before,
+body.page-credit .investment-scenarios .scenario-slide::before,
+body.page-main .investment-scenarios .scenario-slide::before,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-slide::after,
+body.page-influence .investment-scenarios .scenario-slide::after,
+body.page-credit .investment-scenarios .scenario-slide::after,
+body.page-main .investment-scenarios .scenario-slide::after,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-slide-body::before,
+body.page-influence .investment-scenarios .scenario-slide-body::before,
+body.page-credit .investment-scenarios .scenario-slide-body::before,
+body.page-main .investment-scenarios .scenario-slide-body::before,
 body.page-investment .investment-scenarios .scenario-slide-body::after, body.page-influence .investment-scenarios .scenario-slide-body::after, body.page-credit .investment-scenarios .scenario-slide-body::after, body.page-main .investment-scenarios .scenario-slide-body::after{
   content: none !important;
   border: 0 !important;
@@ -6538,14 +6538,14 @@ body.page-investment .investment-scenarios .scenario-slide-body::after, body.pag
 }
 
 /* if the orange frame is made by an element inside the slide (common pattern) */
-body.page-investment .investment-scenarios .scenario-slide .scenario-slide-border,
-, body.page-influence .investment-scenarios .scenario-slide .scenario-slide-border,
-, body.page-credit .investment-scenarios .scenario-slide .scenario-slide-border,
-, body.page-main .investment-scenarios .scenario-slide .scenario-slide-border,
-body.page-investment .investment-scenarios .scenario-slide .scenario-slide-frame,
-, body.page-influence .investment-scenarios .scenario-slide .scenario-slide-frame,
-, body.page-credit .investment-scenarios .scenario-slide .scenario-slide-frame,
-, body.page-main .investment-scenarios .scenario-slide .scenario-slide-frame,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-slide .scenario-slide-border,
+body.page-influence .investment-scenarios .scenario-slide .scenario-slide-border,
+body.page-credit .investment-scenarios .scenario-slide .scenario-slide-border,
+body.page-main .investment-scenarios .scenario-slide .scenario-slide-border,
+:where(body.page-investment, body.page-main, body.page-influence, body.page-credit) .investment-scenarios .scenario-slide .scenario-slide-frame,
+body.page-influence .investment-scenarios .scenario-slide .scenario-slide-frame,
+body.page-credit .investment-scenarios .scenario-slide .scenario-slide-frame,
+body.page-main .investment-scenarios .scenario-slide .scenario-slide-frame,
 body.page-investment .investment-scenarios .scenario-slide .scenario-slide-outline, body.page-influence .investment-scenarios .scenario-slide .scenario-slide-outline, body.page-credit .investment-scenarios .scenario-slide .scenario-slide-outline, body.page-main .investment-scenarios .scenario-slide .scenario-slide-outline{
   display: none !important;
 }
