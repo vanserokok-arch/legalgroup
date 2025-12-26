@@ -6311,13 +6311,13 @@ html body.page-investment .keis-marquee .keis-marquee__track{
   bottom: 0;
   z-index: 9999;
   display: none;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
 }
 
 .keis-modal.is-open {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .keis-modal__overlay {
@@ -6386,6 +6386,10 @@ body.modal-open {
 }
 
 @media (max-width: 768px) {
+  .keis-modal {
+    padding: 10px;
+  }
+
   .keis-modal__panel {
     padding: 24px;
     max-height: 95vh;
@@ -6393,9 +6397,5 @@ body.modal-open {
   
   .keis-modal__title {
     font-size: 24px;
-  }
-  
-  .keis-modal {
-    padding: 10px;
   }
 }
