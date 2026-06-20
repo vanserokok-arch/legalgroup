@@ -8938,3 +8938,271 @@ img:not([loading="lazy"]) {
   }
 }
 
+/* ==========================================================
+   HERO PREMIUM REFINEMENT (shared across fraud pages)
+   Constraints:
+   - no text/content structure changes
+   - keep mobile text composition (0-760) untouched
+   ========================================================== */
+body.page-main .hero-investment,
+body.page-investment .hero-investment,
+body.page-credit .hero-investment,
+body.page-influence .hero-investment {
+  padding-bottom: clamp(82px, 9.6vh, 138px);
+}
+
+body.page-main .hero-investment .hero-investment__bg,
+body.page-investment .hero-investment .hero-investment__bg,
+body.page-credit .hero-investment .hero-investment__bg,
+body.page-influence .hero-investment .hero-investment__bg {
+  background:
+    linear-gradient(108deg, rgba(3,2,2,.90) 5%, rgba(6,4,4,.50) 40%, rgba(5,3,3,.84) 100%),
+    radial-gradient(980px 580px at 20% 33%, rgba(0,0,0,.66), transparent 67%),
+    radial-gradient(820px 560px at 84% 34%, rgba(0,0,0,.56), transparent 64%),
+    radial-gradient(620px 440px at 78% 67%, rgba(0,0,0,.52), transparent 68%),
+    radial-gradient(560px 380px at 17% 66%, rgba(0,0,0,.46), transparent 70%),
+    linear-gradient(180deg, rgba(0,0,0,.70) 0%, rgba(0,0,0,.22) 46%, rgba(0,0,0,.82) 100%),
+    var(--hero-offer, url('/fraud/assets/block/offer.jpeg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-main .hero-investment .hero-investment__grid,
+body.page-investment .hero-investment .hero-investment__grid,
+body.page-credit .hero-investment .hero-investment__grid,
+body.page-influence .hero-investment .hero-investment__grid {
+  gap: clamp(1.2rem, 2.8vw, 2.9rem);
+}
+
+body.page-main .hero-investment .hero-form-card,
+body.page-investment .hero-investment .hero-form-card,
+body.page-credit .hero-investment .hero-form-card,
+body.page-influence .hero-investment .hero-form-card {
+  border-radius: 28px;
+  padding: clamp(24px, 2.2vw, 34px);
+  background:
+    radial-gradient(128% 132% at 10% -6%, rgba(255, 154, 70, .24), transparent 56%),
+    radial-gradient(132% 150% at 112% 26%, rgba(255, 126, 34, .20), transparent 64%),
+    linear-gradient(160deg, rgba(255,255,255,.14), rgba(255,255,255,.02)),
+    rgba(8,4,2,.80);
+  border: 1px solid rgba(255,255,255,.20);
+  box-shadow:
+    0 38px 120px rgba(0,0,0,.88),
+    0 20px 48px rgba(0,0,0,.54),
+    0 0 44px rgba(255,122,24,.14);
+}
+
+body.page-main .hero-investment .hero-form-subtitle,
+body.page-investment .hero-investment .hero-form-subtitle,
+body.page-credit .hero-investment .hero-form-subtitle,
+body.page-influence .hero-investment .hero-form-subtitle {
+  margin: 12px auto 16px;
+  color: rgba(244,241,235,.88);
+}
+
+body.page-main .hero-investment .hero-form-divider,
+body.page-investment .hero-investment .hero-form-divider,
+body.page-credit .hero-investment .hero-form-divider,
+body.page-influence .hero-investment .hero-form-divider {
+  margin: 18px 0 20px;
+}
+
+body.page-main .hero-investment .hero-form-row,
+body.page-investment .hero-investment .hero-form-row,
+body.page-credit .hero-investment .hero-form-row,
+body.page-influence .hero-investment .hero-form-row {
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+body.page-main .hero-investment .hero-form-group label,
+body.page-investment .hero-investment .hero-form-group label,
+body.page-credit .hero-investment .hero-form-group label,
+body.page-influence .hero-investment .hero-form-group label {
+  margin-bottom: 8px;
+  color: rgba(244,241,235,.84);
+  font-size: .92rem;
+  font-weight: 850;
+}
+
+body.page-main .hero-investment .hero-form-group input,
+body.page-main .hero-investment .hero-form-group textarea,
+body.page-investment .hero-investment .hero-form-group input,
+body.page-investment .hero-investment .hero-form-group textarea,
+body.page-credit .hero-investment .hero-form-group input,
+body.page-credit .hero-investment .hero-form-group textarea,
+body.page-influence .hero-investment .hero-form-group input,
+body.page-influence .hero-investment .hero-form-group textarea {
+  border-radius: 15px;
+  border: 1px solid rgba(255, 192, 120, .30);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.02)),
+    rgba(6,3,2,.86);
+  color: rgba(246,242,235,.98);
+  font-size: .98rem;
+  line-height: 1.35;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+body.page-main .hero-investment .hero-form-group input {
+  min-height: 52px;
+  padding: 14px 15px;
+}
+
+body.page-investment .hero-investment .hero-form-group input,
+body.page-credit .hero-investment .hero-form-group input,
+body.page-influence .hero-investment .hero-form-group input {
+  min-height: 52px;
+  padding: 14px 15px;
+}
+
+body.page-main .hero-investment .hero-form-group textarea,
+body.page-investment .hero-investment .hero-form-group textarea,
+body.page-credit .hero-investment .hero-form-group textarea,
+body.page-influence .hero-investment .hero-form-group textarea {
+  min-height: 132px;
+  padding: 14px 15px;
+}
+
+body.page-main .hero-investment .hero-form-group input::placeholder,
+body.page-main .hero-investment .hero-form-group textarea::placeholder,
+body.page-investment .hero-investment .hero-form-group input::placeholder,
+body.page-investment .hero-investment .hero-form-group textarea::placeholder,
+body.page-credit .hero-investment .hero-form-group input::placeholder,
+body.page-credit .hero-investment .hero-form-group textarea::placeholder,
+body.page-influence .hero-investment .hero-form-group input::placeholder,
+body.page-influence .hero-investment .hero-form-group textarea::placeholder {
+  color: rgba(244,241,235,.72);
+}
+
+body.page-main .hero-investment .hero-form-group input:focus,
+body.page-main .hero-investment .hero-form-group textarea:focus,
+body.page-investment .hero-investment .hero-form-group input:focus,
+body.page-investment .hero-investment .hero-form-group textarea:focus,
+body.page-credit .hero-investment .hero-form-group input:focus,
+body.page-credit .hero-investment .hero-form-group textarea:focus,
+body.page-influence .hero-investment .hero-form-group input:focus,
+body.page-influence .hero-investment .hero-form-group textarea:focus {
+  border-color: rgba(255, 166, 78, .92);
+  box-shadow:
+    0 0 0 2px rgba(255,122,24,.48),
+    inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+body.page-main .hero-investment .btn-primary,
+body.page-investment .hero-investment .btn-primary,
+body.page-credit .hero-investment .btn-primary,
+body.page-influence .hero-investment .btn-primary {
+  width: 100%;
+  max-width: none;
+  min-height: 56px;
+  margin-top: 14px;
+  border-radius: 16px;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  box-shadow:
+    0 28px 78px rgba(0,0,0,.82),
+    0 14px 34px rgba(255,122,24,.26),
+    inset 0 1px 0 rgba(255,255,255,.30);
+}
+
+body.page-main .hero-investment .hero-form-disclaimer,
+body.page-investment .hero-investment .hero-form-disclaimer,
+body.page-credit .hero-investment .hero-form-disclaimer,
+body.page-influence .hero-investment .hero-form-disclaimer {
+  margin-top: 14px;
+  color: rgba(244,241,235,.68);
+}
+
+body.page-main .hero-investment .hero-benefits,
+body.page-investment .hero-investment .hero-benefits,
+body.page-credit .hero-investment .hero-benefits,
+body.page-influence .hero-investment .hero-benefits {
+  margin-top: clamp(20px, 2.4vw, 36px);
+}
+
+body.page-main .hero-investment .hero-benefits-grid.hero-benefits-grid--intro,
+body.page-investment .hero-investment .hero-benefits-grid.hero-benefits-grid--intro,
+body.page-credit .hero-investment .hero-benefits-grid.hero-benefits-grid--intro,
+body.page-influence .hero-investment .hero-benefits-grid.hero-benefits-grid--intro {
+  gap: clamp(12px, 1.4vw, 18px);
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: minmax(0, 1fr);
+  align-items: stretch;
+}
+
+body.page-main .hero-investment .hero-benefit-card.hero-benefit-card--intro,
+body.page-investment .hero-investment .hero-benefit-card.hero-benefit-card--intro,
+body.page-credit .hero-investment .hero-benefit-card.hero-benefit-card--intro,
+body.page-influence .hero-investment .hero-benefit-card.hero-benefit-card--intro {
+  min-height: clamp(138px, 12vw, 170px);
+  height: 100%;
+  padding: clamp(18px, 1.8vw, 24px);
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.21);
+  background:
+    radial-gradient(140% 170% at 0% 0%, rgba(255,186,116,.20), rgba(255,186,116,.08) 35%, transparent 66%),
+    linear-gradient(175deg, rgba(255,255,255,.13), rgba(255,255,255,.03)),
+    rgba(11,7,5,.72);
+  box-shadow:
+    0 22px 52px rgba(0,0,0,.66),
+    inset 0 1px 0 rgba(255,255,255,.20),
+    inset 0 -1px 0 rgba(0,0,0,.32);
+}
+
+body.page-main .hero-investment .hero-benefit-card.hero-benefit-card--intro strong,
+body.page-investment .hero-investment .hero-benefit-card.hero-benefit-card--intro strong,
+body.page-credit .hero-investment .hero-benefit-card.hero-benefit-card--intro strong,
+body.page-influence .hero-investment .hero-benefit-card.hero-benefit-card--intro strong {
+  font-size: clamp(.93rem, .96vw, 1.04rem);
+  line-height: 1.42;
+}
+
+@media (min-width: 761px) and (max-width: 1199px) {
+  body.page-main .hero-investment,
+  body.page-investment .hero-investment,
+  body.page-credit .hero-investment,
+  body.page-influence .hero-investment {
+    padding-bottom: clamp(72px, 8.4vh, 112px);
+  }
+
+  body.page-main .hero-investment .hero-investment__grid,
+  body.page-investment .hero-investment .hero-investment__grid,
+  body.page-credit .hero-investment .hero-investment__grid,
+  body.page-influence .hero-investment .hero-investment__grid {
+    gap: clamp(1.05rem, 2.3vw, 2rem);
+  }
+
+  body.page-main .hero-investment .hero-form-card,
+  body.page-investment .hero-investment .hero-form-card,
+  body.page-credit .hero-investment .hero-form-card,
+  body.page-influence .hero-investment .hero-form-card {
+    padding: clamp(22px, 2.6vw, 30px);
+    border-radius: 24px;
+  }
+
+  body.page-main .hero-investment .hero-benefits,
+  body.page-investment .hero-investment .hero-benefits,
+  body.page-credit .hero-investment .hero-benefits,
+  body.page-influence .hero-investment .hero-benefits {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.page-main .hero-investment .hero-investment__grid,
+  body.page-investment .hero-investment .hero-investment__grid,
+  body.page-credit .hero-investment .hero-investment__grid,
+  body.page-influence .hero-investment .hero-investment__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(500px, 620px);
+    column-gap: clamp(30px, 3.4vw, 58px);
+  }
+
+  body.page-main .hero-investment .hero-benefits,
+  body.page-investment .hero-investment .hero-benefits,
+  body.page-credit .hero-investment .hero-benefits,
+  body.page-influence .hero-investment .hero-benefits {
+    max-width: min(860px, 100%);
+  }
+}
